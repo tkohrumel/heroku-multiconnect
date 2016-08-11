@@ -1,0 +1,83 @@
+{
+  "mappings": [
+    {
+      "object_name": "Tweet__c",
+      "config": {
+        "access": "read_write",
+        "sf_max_daily_api_calls": 30000,
+        "sf_polling_seconds": 3600,
+        "applied_at": "2016-03-11T01:44:48.250Z",
+        "sf_notify_enabled": false,
+        "fields": {
+          "Author_Username__c": {},
+          "CreatedDate": {},
+          "Id": {},
+          "Time__c": {},
+          "SystemModstamp": {},
+          "Account__c": {},
+          "IsDeleted": {},
+          "Likes__c": {},
+          "Retweets__c": {},
+          "Body__c": {},
+          "Name": {}
+        }
+      }
+    },
+    {
+      "object_name": "Contact",
+      "config": {
+        "access": "read_only",
+        "fields": {
+          "Name": {},
+          "IsDeleted": {},
+          "CreatedDate": {},
+          "SystemModstamp": {},
+          "Id": {}
+        },
+        "sf_polling_seconds": 600,
+        "sf_notify_enabled": false,
+        "sf_max_daily_api_calls": 30000
+      }
+    },
+    {
+      "object_name": "Account",
+      "config": {
+        "access": "read_write",
+        "sf_max_daily_api_calls": 30000,
+        "sf_polling_seconds": 120,
+        "applied_at": "2016-03-10T07:03:53.239Z",
+        "sf_notify_enabled": false,
+        "fields": {
+          "CreatedDate": {},
+          "Name": {},
+          "Twitter__c": {},
+          "IsDeleted": {},
+          "SystemModstamp": {},
+          "Id": {}
+        }
+      }
+    },
+    {
+      "object_name": "Connection__c",
+      "config": {
+        "access": "read_write",
+        "fields": {
+          "Name": {},
+          "IsDeleted": {},
+          "CreatedDate": {},
+          "SystemModstamp": {},
+          "Id": {}
+        },
+        "sf_polling_seconds": 3600,
+        "sf_notify_enabled": false,
+        "sf_max_daily_api_calls": 30000
+      }
+    }
+  ],
+  "connection": {
+    "exported_at": "2016-03-11T02:15:19.258562+00:00",
+    "app_name": "hcpoc-staging",
+    "organization_id": "00DB00000002NDmMAM"
+  },
+  "version": 1
+}

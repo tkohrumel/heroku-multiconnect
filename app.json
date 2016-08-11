@@ -1,0 +1,17 @@
+{
+	"name": "Heroku-Multiconnect",
+	"description": "Multitenant Rails prototype demonstrating synchronization of schemas in a Postgres database with distributed Salesforce instances.",
+	"repository": "https://github.com/tkohrumel/heroku-multiconnect",
+	"addons": ["heroku-postgresql:hobby-dev", "heroku-redis:hobby-dev", "scheduler:standard", "sendgrid:starter", "papertrail:choklad"],
+	"scripts": {
+		"postdeploy": "bundle exec rake bootstrap_heroku_app"
+	},
+    "formation": {
+        "web": {
+            "quantity": 1
+        },
+        "worker": {
+            "quantity": 1
+        }
+    }
+}
