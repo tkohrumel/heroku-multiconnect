@@ -17,7 +17,7 @@ ___
 
 ## Heroku
 
-- Dynos
+- Processes
   - Frontend Rails app, which handles the creation of sync operations, via the Heroku Connect API, between customers' Salesforce organizations and a multitenant Heroku Postgres database 
   - Ruby process for background jobs
 - Add-ons
